@@ -7,6 +7,14 @@ public abstract class Vehicle {
    private int productionYear;
    private double speed;
 
+   public Vehicle(){}
+    
+   public Vehicle(String vehicleType, int productionYear, double speed) {
+        this.vehicleType = vehicleType;
+        this.productionYear = productionYear;
+        this.speed = speed;
+   }
+   
    abstract void startEngine();
    abstract void transportPeople(Station stationA,Station stationB);
    abstract void showFullInfo();
